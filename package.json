@@ -1,0 +1,14 @@
+{
+  "name": "bankdashboard",
+  "version": "1.0.0",
+  "description": "I am gonna create a dashboard for banking system, and I am gonna use ScSS and Vanilla JS for this project.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

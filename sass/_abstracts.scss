@@ -1,0 +1,30 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin fontSize ($font-size, $font-weight) { 
+    font-size:$font-size;
+    font-weight: $font-weight;
+}
+
+
+
+
+

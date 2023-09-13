@@ -1,0 +1,258 @@
+@import "abstracts";
+@import "base";
+@import "component";
+
+
+//Container Configurations
+// --------------------------------------------------
+
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background-color: #F8F8F4;
+    width: 90vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+//Header Configurations
+// --------------------------------------------------
+
+.dashboard__header{
+    background-color: #fff;
+    align-self: flex-start;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+
+    &__logo img{
+        width: 4rem;
+        height: 4rem;
+        margin-left: 2rem;
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        &__list {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 30rem;
+            height: 100%;
+
+            &--item{
+                display: inline-block;
+                height: 100%;
+                line-height: 6rem;
+                background-color: #F8F8F4;
+                padding: 0 2rem;
+
+                    &:hover{
+                        background-color: antiquewhite;
+                    }   
+            }
+        }
+
+
+    }
+}
+
+// Header Configurations ends here..
+
+
+// Main Configurations
+// --------------------------------------------------
+
+.dashboard__main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+    &__menu{ // Menu Area starts here
+        background-color: #c6c6c6;
+        width: 20rem;
+        height: 96%;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        overflow: hidden;
+
+        &__links{
+            list-style: none;
+            padding: 2rem 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &--link{
+                width: 100%;
+                height: 5rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 2rem;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #F8F8F4;
+                }
+            }
+        }
+    }
+
+    &__content{  // Content Area starts here
+        background-color: #F8F8F4;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        padding: 2rem;
+        overflow-y: auto;
+        
+
+        &__text{
+
+            &--title{
+                @include fontSize(1.5rem, 300);
+                
+            }
+        }
+
+
+        &__contents{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 2rem;
+            margin-top: 2rem;
+            height: 100%;
+            width: 100%;
+
+                &--chartBox{
+                    background-color: #fff;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &--title{
+                        @include fontSize(1.5rem, 300);
+                    }
+
+                    &--chart{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &--savingBox {
+                    background-color: #fff;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &--title{
+                        @include fontSize(1.5rem, 300);
+                    }
+
+                    &--saving{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+
+                &--flowBox{
+                    background-color: #fff;
+                    grid-area: 1/1/3/-3;
+                    width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &--title{
+                        @include fontSize(1.5rem, 300);
+                    }
+
+                    &--table{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+        }
+
+    
+
+        
+
+        
+    }
+}
+
+
+
+
+
+
+// Main Configurations ends here..
+
+// Footer Configurations
+// --------------------------------------------------
+
+.dashboard__footer{
+    background-color: #fff;
+    align-self: flex-end;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+
+    &__logo img{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 2rem;
+    }
+
+
+}
