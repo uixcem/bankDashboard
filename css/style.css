@@ -56,8 +56,8 @@
   z-index: 2; }
   .dashboard__main__menu {
     background-color: #c6c6c6;
-    width: 20rem;
-    height: 96%;
+    width: 25rem;
+    height: 100%;
     position: relative;
     z-index: 2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -92,65 +92,6 @@
     .dashboard__main__content__text--title {
       font-size: 1.5rem;
       font-weight: 300; }
-    .dashboard__main__content__contents {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-gap: 2rem;
-      margin-top: 2rem;
-      height: 100%;
-      width: 100%; }
-      .dashboard__main__content__contents--chartBox {
-        background-color: #fff;
-        height: 100%;
-        width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center; }
-        .dashboard__main__content__contents--chartBox--title {
-          font-size: 1.5rem;
-          font-weight: 300; }
-        .dashboard__main__content__contents--chartBox--chart {
-          width: 100%;
-          height: 100%; }
-      .dashboard__main__content__contents--savingBox {
-        background-color: #fff;
-        height: 100%;
-        width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center; }
-        .dashboard__main__content__contents--savingBox--title {
-          font-size: 1.5rem;
-          font-weight: 300; }
-        .dashboard__main__content__contents--savingBox--saving {
-          width: 100%;
-          height: 100%; }
-      .dashboard__main__content__contents--flowBox {
-        background-color: #fff;
-        grid-area: 1/1/3/-3;
-        width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center; }
-        .dashboard__main__content__contents--flowBox--title {
-          font-size: 1.5rem;
-          font-weight: 300; }
-        .dashboard__main__content__contents--flowBox--table {
-          width: 100%;
-          height: 100%; }
 
 .dashboard__footer {
   background-color: #fff;
@@ -159,13 +100,12 @@
   z-index: 3;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 6rem; }
   .dashboard__footer__logo img {
     width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 2rem; }
+    height: 1.5rem; }
 
 *,
 *::before,
